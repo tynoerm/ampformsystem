@@ -7,7 +7,7 @@ const app = express();
 
 
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://ampformsystem.vercel.app',
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true, // Optional: if you're sending cookies/auth headers
