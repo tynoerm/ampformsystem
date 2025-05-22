@@ -68,14 +68,14 @@ const InternetaccessEdit = ({ item, setFormEntries }) => {
       if (item && item._id) {
         // Update mode
         response = await axios.put(
-          `http://localhost:3001/internetaccess/update-internetaccess/${item._id}`,
+          `https://ampformsystem.onrender.com/internetaccess/update-internetaccess/${item._id}`,
           formData
         );
         toast.success("Request updated successfully!");
       } else {
         // Create mode (fallback)
         response = await axios.post(
-          "http://localhost:3001/internetaccess/create-internetaccess",
+          "https://ampformsystem.onrender.com/internetaccess/create-internetaccess",
           formData
         );
         toast.success("Form submitted successfully!");

@@ -38,7 +38,7 @@ const FormmanagementUsers = () => {
     setLoading(true);
     setError(null);
 
-    axios.get(`http://localhost:3001/${collectionSelected}/`)
+    axios.get(`https://ampformsystem.onrender.com/${collectionSelected}/`)
       .then(res => {
         const data = res.data.data || [];
         const filteredData = data.filter(item =>

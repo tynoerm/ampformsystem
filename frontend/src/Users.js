@@ -17,7 +17,7 @@ const Users = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:3001/users");
+        const response = await axios.get("https://ampformsystem.onrender.com/users");
         console.log('API response:', response.data);
         setUsers(response.data.data || response.data);
       } catch (err) {
@@ -67,7 +67,7 @@ const handleResetPassword = async () => {
 
   try {
     // Make PUT request to update password endpoint
-    await axios.put(`http://localhost:3001/users/update-password/${selectedUser._id}`, {
+    await axios.put(`https://ampformsystem.onrender.com/users/update-password/${selectedUser._id}`, {
       password: newPassword,  // or "newPassword" depending on your backend field name
     });
 

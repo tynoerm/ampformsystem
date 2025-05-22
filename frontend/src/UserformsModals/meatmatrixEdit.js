@@ -143,7 +143,7 @@ const MeatmatrixEdit = ({ item, setFormEntries }) => {
 
     try {
       const response = await axios.put(
-        `http://localhost:3001/meatmatrix/update-meatmatrix/${item._id}`, // or item._id or whatever your id field is
+        `https://ampformsystem.onrender.com/meatmatrix/update-meatmatrix/${item._id}`, // or item._id or whatever your id field is
         formEntry
       );
 

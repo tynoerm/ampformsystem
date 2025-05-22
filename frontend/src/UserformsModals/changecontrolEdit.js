@@ -94,7 +94,7 @@ const handleSubmit = async (e) => {
 
   try {
     const response = await axios.put(
-      `http://localhost:3001/changeofcontrol/update-changeofcontrol/${item._id}`,
+      `https://ampformsystem.onrender.com/changeofcontrol/update-changeofcontrol/${item._id}`,
       formData
     );
     console.log("VPN Request submitted successfully:", response.data);

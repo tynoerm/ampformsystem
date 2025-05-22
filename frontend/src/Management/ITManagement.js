@@ -53,7 +53,7 @@ const ITManagement = () => {
     setError(null);
 
     axios
-      .get(`http://localhost:3001/${collectionSelected}/`)
+      .get(`https://ampformsystem.onrender.com/${collectionSelected}/`)
       .then((res) => {
         const data = res.data.data || [];
         setFormData(data);

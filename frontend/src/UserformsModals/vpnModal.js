@@ -84,7 +84,7 @@ const handleSubmit = async (e) => {
   };
 
   try {
-    const response = await axios.post("http://localhost:3001/vpn/create-vpn", formData);
+    const response = await axios.post("https://ampformsystem.onrender.com/vpn/create-vpn", formData);
     console.log("VPN Request submitted successfully:", response.data);
 
     // Clear all fields after successful submission

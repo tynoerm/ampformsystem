@@ -127,7 +127,7 @@ const IvendEdit = ({ item, setFormEntries }) => {
 
     try {
       const response = await axios.put(
-        `http://localhost:3001/ivendusers/update-ivendusers/${formId}`,
+        `https://ampformsystem.onrender.com/ivendusers/update-ivendusers/${formId}`,
         formEntry,
         {
           headers: {

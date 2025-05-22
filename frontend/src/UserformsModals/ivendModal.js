@@ -67,7 +67,7 @@ const IvendModal = () => {
     };
 
     try {
-      await axios.post("http://localhost:3001/ivendusers/create-ivenduser", formEntry, {
+      await axios.post("https://ampformsystem.onrender.com/ivendusers/create-ivenduser", formEntry, {
         headers: { "Content-Type": "application/json" }
       });
       toast.success("Ivend form submitted successfully!");

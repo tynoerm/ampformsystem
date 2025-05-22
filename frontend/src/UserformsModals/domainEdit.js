@@ -112,7 +112,7 @@ const DomainEdit = ({ item, setFormEntries }) => {
 
     try {
       await axios.put(
-        `http://localhost:3001/domainaccess/update-domainaccess/${item._id}`,
+        `https://ampformsystem.onrender.com/domainaccess/update-domainaccess/${item._id}`,
         formEntry
       );
 

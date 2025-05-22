@@ -78,7 +78,7 @@ const DomainModal = () => {
 
     try {
       await axios.post(
-        "http://localhost:3001/domainaccess/create-domainaccess",
+        "https://ampformsystem.onrender.com/domainaccess/create-domainaccess",
         formEntry
       );
 

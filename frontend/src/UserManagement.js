@@ -21,7 +21,7 @@ function UserManagement() {
         setLoading(true);
 
         try {
-            const response = await axios.post('http://localhost:3001/users/create-user', {
+            const response = await axios.post('https://ampformsystem.onrender.com/users/create-user', {
                 fullName,
                 username,
                 password,

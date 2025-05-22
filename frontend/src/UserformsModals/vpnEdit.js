@@ -113,7 +113,7 @@ const VpnEdit = ({ item, setFormEntries }) => {
     };
 
     try {
-      const response = await axios.put(`http://localhost:3001/vpn/update-vpn/${item._id}`, formData);
+      const response = await axios.put(`https://ampformsystem.onrender.com/vpn/update-vpn/${item._id}`, formData);
       console.log("VPN Request submitted successfully:", response.data);
 
       // Clear all fields after successful submission
